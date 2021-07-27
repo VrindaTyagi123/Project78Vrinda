@@ -1,23 +1,44 @@
 <html>
+  
+  <head>
+    <title>Family Book - Vrinda</title>
+  </head>
+  
+  <body>
+    <h1>Family Book</h1>
+    <hr>
+    
+    <img id="family_book_image" src="Family.jpg">
+    <h3 id="one">1. Our Family Book</h3>
+      <button type="button" onclick="update()"> NEXT </button>
 
-<head>
+      <hr>
 
-    <title>Project 78 - Family Book - Vrinda</title>
-</head>
+  </body>
 
-<body>
+  <script>
 
-    <p><h1>Family Book</h1></p>
+    var names=[
+      "2. My Father (Abhishek Tyagi)",
+      "3. My Mother (Shivani Tyagi)",
+      "4. Me (Vrinda Tyagi)"
+    ];
 
-    <img src="Image 1.jpg" style="width: 30%; height: 50%;" id="family_member_image">
+    var images=[
+      "Father.jpg",
+      "Mom.png",
+      "Me.jpg"
+    ];
 
-    <p>
+    var i=0;
+    function update(){
+      document.getElementById("one").innerHTML=names[i];
+      document.getElementById("family_book_image").innerHTML=names[i];
 
-        Soni Singh
-        <h4 id="family_member_name"></h4>
-    </p>
-
-
-    <button type="button" onclick="update()">Next</button>
-</body>
+      i++
+      if(i==4){
+        i=0;
+      };
+    };
+  </script>
 </html>
