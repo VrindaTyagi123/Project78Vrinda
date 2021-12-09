@@ -9,39 +9,15 @@
       <h1>Family Book</h1>
       <hr>
       
-      <img id="family_book_image" src="Family.jpg">
+      <h4 id="family_member_name"></h4>
+      <img src="61zTGIEvQoL.jpg" style="width: 30%; height: 50%;" id="family_member_name">
       <h3 id="one">1. Our Family Book</h3>
-        <button type="button" onclick="update()"> NEXT </button>
+
+        <button onclick="update();"> NEXT </button>
   
         <hr>
   
     </body>
-  
-    <script>
-  
-      var names=[
-        "2. My Father (Abhishek Tyagi)",
-        "3. My Mother (Shivani Tyagi)",
-        "4. Me (Vrinda Tyagi)"
-      ];
-  
-      var images=[
-        "Father.jpg",
-        "Mom.png",
-        "Me.jpg"
-      ];
-  
-      var i=0;
-      function update(){
-        document.getElementById("one").innerHTML=names[i];
-        document.getElementById("family_book_image").innerHTML=names[i];
-  
-        i++
-        if(i==4){
-          i=0;
-        };
-      };
-    </script>
   </center>
   
 </html>
